@@ -4,12 +4,12 @@ Skriv din gissning FÖRST. Skriv sedan raden i STEG 7 i `src/main.ts`, kör den 
 
 | Uttryck | Min gissning | Det som hände | Vad sa TypeScript? | Hade jag rätt? |
 |---|---|---|---|---|
-| `"5" + 3` | | | | |
-| `"5" - 3` | | | | |
-| `true + 1` | | | | |
-| `0.1 + 0.2` | | | | |
-| `"" === 0` | | | | |
-| `null == undefined` | | | | |
+| `"5" + 3` |TypeScript klagar | | | |
+| `"5" - 3` |TypeScript klagar | | | |
+| `true + 1` | TypeScript klagar| | | |
+| `0.1 + 0.2` |0.3 | | | |
+| `"" === 0` | false| | | |
+| `null == undefined` | true| | | |
 
 ## Min regel för det jag missade
 
