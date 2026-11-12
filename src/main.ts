@@ -79,13 +79,19 @@ let klockslag: number = 15;
 
 let ärÖppet: boolean;
 
-if (veckodag === "lördag" || veckodag === "söndag") {   
+if (veckodag === "lördag" || veckodag === "söndag") {
   ärÖppet = klockslag >= 9 && klockslag < 16;
 } else {
   ärÖppet = klockslag >= 7 && klockslag < 18;
-}   
+}
 
 console.log(`Öppet just nu: ${ärÖppet ? "ja" : "nej"}`);
 
 // STEG 7 ------------------------------------------------------------
 // TODO: se README. Gissa först, kör sedan.
+console.log("5" + 3);
+console.log("5" - 3);
+console.log(true + 1);
+console.log(0.1 + 0.2);
+console.log("" === 0);
+console.log(null == undefined);

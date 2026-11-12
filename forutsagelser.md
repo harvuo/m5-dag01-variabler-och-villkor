@@ -4,12 +4,12 @@ Skriv din gissning FÖRST. Skriv sedan raden i STEG 7 i `src/main.ts`, kör den 
 
 | Uttryck | Min gissning | Det som hände | Vad sa TypeScript? | Hade jag rätt? |
 |---|---|---|---|---|
-| `"5" + 3` |TypeScript klagar | | | |
-| `"5" - 3` |TypeScript klagar | | | |
-| `true + 1` | TypeScript klagar| | | |
-| `0.1 + 0.2` |0.3 | | | |
-| `"" === 0` | false| | | |
-| `null == undefined` | true| | | |
+| `"5" + 3` |TypeScript klagar |Det blev en sträng "53" |TypeScript klagade inte |Fel |
+| `"5" - 3` |TypeScript klagar |Det blev ett tal 2| The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.ts(2362) | Rätt|
+| `true + 1` | TypeScript klagar|Det blev ett tal 2 |Operator '+' cannot be applied to types 'boolean' and 'number'.ts(2365) | Rätt|
+| `0.1 + 0.2` |0.3 | Det blev 0.30000000000000004|TypeScript klagade inte| Rätt bortsett från att det var fler än en decimal|
+| `"" === 0` | false|false |This comparison appears to be unintentional because the types 'string' and 'number' have no overlap.ts(2367)|Rätt |
+| `null == undefined` | true|true |TypeScript klagade inte | Rätt|
 
 ## Min regel för det jag missade
 
